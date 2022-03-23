@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "15d704f0-a387-4020-a2e5-6495d6ff3273",
+		"name": "MockaApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MockaApi - Medico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"crm\": 90863,\r\n  \"nomeMedico\": \"Caesar\",\r\n  \"clinica\": [\r\n      {\r\n          \"idClinica\": 1,\r\n          \"idEndereco\": \"1\",\r\n          \"nomeFantasia\": \"Clinica Porsalle\",\r\n          \"cnpj\": \"86.400.902/0001-30\",\r\n          \"razaoSocial\": \"Sp Medical Group\"\r\n      }\r\n  ],\r\n  \"especialidades\": [\r\n      {\r\n          \"idEspecialidade\": 4,\r\n          \"tituloEspecialidade\" : \"Angiologia\"\r\n      }\r\n  ],\r\n \"Usuario\": [\r\n      {\r\n          \"idUsuario\": 1,\r\n          \"idTipoUsuario\": 1,\r\n          \"nomeUsuario\" : \"Fernando\",\r\n          \"email\" : \"fernando@gmail.com\",\r\n          \"senha\": \"fernando123\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://623678214d0977f1db451e3b.mockapi.io/Medico/1",
+					"protocol": "https",
+					"host": [
+						"623678214d0977f1db451e3b",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Medico",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockaApi - Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeUsuario\": Vivian Halvorson,\r\n  \"email\": \"Francesco.Klein30@gmail.com\",\r\n  \"senha\": \"2QPhK7uHeCSQ5AC\",\r\n  \"TipoUsuario\": [\r\n      {\r\n          \"idTipoUsuario\": 1,\r\n          \"tituloTipoUsuario\": \"adm\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://620506e9161670001741b369.mockapi.io/Usuario/1",
+					"protocol": "https",
+					"host": [
+						"620506e9161670001741b369",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockaApi - Paciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomePaciente\": \"Daphney\",\r\n    \"rg\": 77721,\r\n    \"cpf\": 79632,\r\n    \"dataNasc\": \"2041-06-29T08:27:14.373Z\",\r\n    \"telefone\": 37850,\r\n  \"Endereco\": [\r\n      {\r\n          \"idEndereco\": 1,\r\n          \"rua\" : \"Av. Barao de Limeira\",\r\n          \"numero\" : \"532\",\r\n          \"cidade\" : \"Sao Paulo\",\r\n          \"estado\" : \"SP\",\r\n          \"cep\" : \"02011-970\"\r\n      }\r\n  ],\r\n     \"Usuario\": [\r\n      {\r\n          \"idUsuario\": 1,\r\n          \"idTipoUsuario\": 1,\r\n          \"nomeUsuario\" : \"Fernando\",\r\n          \"email\" : \"fernando@gmail.com\",\r\n          \"senha\": \"fernando123\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://623678214d0977f1db451e3b.mockapi.io/Paciente/1",
+					"protocol": "https",
+					"host": [
+						"623678214d0977f1db451e3b",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Paciente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
